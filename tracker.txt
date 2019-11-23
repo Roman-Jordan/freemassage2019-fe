@@ -1,0 +1,22 @@
+
+{email:"", campaign:""}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test3", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test3}
+{email:"rjordan1352@gmail.com", campaign:"roman_test14", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_test14}
+{email:"romanjordan255@gmail.com", campaign:"roman_test14", source:/img/book.png?email=romanjordan255@gmail.com%0D%0D%0D&camp=roman_test14}
+{email:"rjordan1352@gmail.com", campaign:"roman_finalTest", source:/img/book.png?email=rjordan1352@gmail.com&camp=roman_finalTest}
+{email:"romanjordan255@gmail.com", campaign:"roman_finalTest", source:/img/book.png?email=romanjordan255@gmail.com&camp=roman_finalTest}
+{email:"macy@cliqueone.com", campaign:"roman_finalTest", source:/img/book.png?email=macy@cliqueone.com&camp=roman_finalTest}
+{email:"info@yesamerica.com", campaign:"roman_finalTest", source:/img/book.png?email=info@yesamerica.com&camp=roman_finalTest}
+{email:"info@yesamerica.com", campaign:"roman_test14", source:/img/book.png?email=info@yesamerica.com&camp=roman_test14}
+{email:"info@yesamerica.com", campaign:"TEST1", source:/img/book.png?email=info@yesamerica.com&camp=TEST1}
+{email:"support@cliqueone.com", campaign:"roman_finalTest", source:/img/book.png?email=support@cliqueone.com&camp=roman_finalTest}
+{email:"support@cliqueone.com", campaign:"roman_test14", source:/img/book.png?email=support@cliqueone.com&camp=roman_test14}
+{email:" support@cliqueone.com", campaign:"TEST1", source:/img/book.png?email=+support@cliqueone.com&camp=TEST1}
+{email:"macy@yesamerica.com", campaign:"roman_finalTest", source:/img/book.png?email=macy@yesamerica.com&camp=roman_finalTest}

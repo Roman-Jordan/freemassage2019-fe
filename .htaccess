@@ -1,0 +1,11 @@
+
+RewriteEngine On
+
+
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+RewriteCond %{REQUEST_URI} !/router.php$
+RewriteRule ^(.+)$ router.php [QSA,L]
