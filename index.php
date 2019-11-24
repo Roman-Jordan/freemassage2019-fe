@@ -16,7 +16,7 @@
   <section>
     <div>
       <h1>Book a free in office massage for your staff</h1>
-      <button id="formTrigger">Book now</button>
+      <button id="formTrigger">Book now, FUCK YEA</button>
     </div>
   </section>
   <div id="signup" class="formHolder hideForm">
