@@ -28,7 +28,6 @@
             placeholder="Company Name"
             autocomplete="organization"
           />
-          <label for="name">Contact Person</label>
           <input
             type="text"
             id="name"
@@ -38,12 +37,11 @@
         </div>
         <div>
           <input type="tel" id="tel" name="tel" placeholder="1-971-555-5555" />
-
           <input type="email" id="email" name="email" placeholder="email" />
         </div>
         <div>
           <input type="date" id="date" name="date" placeholder="Date" />
-          
+
           <input type="time" id="time" name="time" placeholder="Time" />
         </div>
         <div>
