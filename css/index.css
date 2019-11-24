@@ -263,7 +263,16 @@ input[type="submit"]:hover {
   }
   form div input[type="date"]:focus:before,
   form div input[type="date"]:valid:before {
-    content: "yo";
+    content: "";
+  }
+  form div input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  form div input[type="time"]:focus:before,
+  form div input[type="time"]:valid:before {
+    content: "";
   }
   .formHolder {
     position: absolute;
