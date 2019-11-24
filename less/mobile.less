@@ -9,6 +9,8 @@
     margin: 10vh 5%;
 
 
+
+
     div {
       width:100%;
       flex-direction: column;
@@ -16,6 +18,16 @@
       textarea,
       input[type] {
         width:100%;
+      }
+
+      input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: #aaa;
+        margin-right: 0.5em;
+      }
+      input[type="date"]:focus:before,
+      input[type="date"]:valid:before {
+        content: "yo";
       }
     }
   }
@@ -28,3 +40,5 @@
     background: rgba(0, 0, 0, 0.6);
   }
 }
+
+
