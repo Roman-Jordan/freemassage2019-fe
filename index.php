@@ -22,9 +22,7 @@
   <div id="signup" class="formHolder hideForm">
     <form action="/newContact.php" method="post">
       <div>
-        <label for="fname">Company Name</label>
         <input type="text" id="CompanyName" name="CompanyName" placeholder="Company Name" autocomplete="organization" />
-
         <label for="name">Contact Person</label>
         <input type="text" id="name" name="name" placeholder="Contact Person" />
       </div>
