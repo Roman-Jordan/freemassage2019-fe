@@ -10,7 +10,6 @@ use PHPMailer\PHPMailer\Exception;
 require_once "./PHPMailer-master/src/PHPMailer.php";
 require_once "./PHPMailer-master/src/Exception.php";
 
-
 function autoMailer($recipient,$campaign){
     
     //PHPMailer Object
@@ -51,9 +50,6 @@ function autoMailer($recipient,$campaign){
 
 //Bring in the mailList
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -78,7 +74,6 @@ function autoMailer($recipient,$campaign){
     <form method="post">
 
         <input type="password" name="secret" placeholder="Your Super Secret"/><input name='campaign' type="text" placeholder="campaign"><input type="submit" /> <br />
-        
         <textarea name="list" rows="25" cols="70" placeholder="example@gmail.com,example2@gmail.com"></textarea>
     </form>
     

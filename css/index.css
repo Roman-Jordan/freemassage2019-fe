@@ -1,23 +1,10 @@
 @font-face {
-  font-family: 'Muli';
+  font-family: "Muli";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v17/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/muli/v17/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format("truetype");
 }
-/**
- * Global Reset of all HTML Elements
- *
- * Resetting all of our HTML Elements ensures a smoother
- * visual transition between browsers. If you don't believe me,
- * try temporarily commenting out this block of code, then go
- * and look at Mozilla versus Safari, both good browsers with
- * a good implementation of CSS. The thing is, all browser CSS
- * defaults are different and at the end of the day if visual
- * consistency is what we're shooting for, then we need to
- * make sure we're resetting all spacing elements.
- *
- */
 html,
 body {
   border: 0;
@@ -145,7 +132,7 @@ body {
   box-sizing: border-box;
 }
 section {
-  background-image: url('../img/FB_COVER_2019.png');
+  background-image: url("../img/FB_COVER_2019.png");
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -203,15 +190,15 @@ form {
 form div {
   display: flex;
 }
-input[type=text],
-input[type=city],
-input[type=state],
-input[type=address],
-input[type=time],
-input[type=date],
-input[type=email],
-input[type=date],
-input[type=tel],
+input[type="text"],
+input[type="city"],
+input[type="state"],
+input[type="address"],
+input[type="time"],
+input[type="date"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
 select {
   width: 100%;
   padding: 12px 20px;
@@ -222,11 +209,11 @@ select {
   box-sizing: border-box;
   font-size: 3rem;
 }
-input[type=time],
-input[type=date] {
+input[type="time"],
+input[type="date"] {
   width: 350px;
 }
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
   background-color: #f9575f;
   color: white;
@@ -237,7 +224,7 @@ input[type=submit] {
   cursor: pointer;
   font-size: 3rem;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 .hideForm {
@@ -250,4 +237,22 @@ input[type=submit]:hover {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
+}
+@media only screen and (max-width: 500px) {
+  body {
+    overflow: visible;
+    overflow-x: hidden;
+  }
+  form {
+    flex-direction: column;
+    margin: 10vh 5%;
+  }
+  form div {
+    width: 100%;
+    flex-direction: column;
+  }
+  form div textarea,
+  form div input[type] {
+    width: 100%;
+  }
 }
