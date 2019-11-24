@@ -1,253 +1,253 @@
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v17/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
-}
-/**
- * Global Reset of all HTML Elements
- *
- * Resetting all of our HTML Elements ensures a smoother
- * visual transition between browsers. If you don't believe me,
- * try temporarily commenting out this block of code, then go
- * and look at Mozilla versus Safari, both good browsers with
- * a good implementation of CSS. The thing is, all browser CSS
- * defaults are different and at the end of the day if visual
- * consistency is what we're shooting for, then we need to
- * make sure we're resetting all spacing elements.
- *
- */
-html,
-body {
-  border: 0;
-  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-div,
-span,
-object,
-iframe,
-img,
-table,
-caption,
-thead,
-tbody,
-tfoot,
-tr,
-tr,
-td,
-article,
-aside,
-canvas,
-details,
-figure,
-hgroup,
-menu,
-nav,
-footer,
-header,
-section,
-summary,
-mark,
-audio,
-video {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-address,
-cit,
-code,
-del,
-dfn,
-em,
-ins,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-b,
-i,
-hr,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-legend,
-label {
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-}
-article,
-aside,
-canvas,
-figure,
-figure img,
-figcaption,
-hgroup,
-footer,
-header,
-nav,
-section,
-audio,
-video {
-  display: block;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-table caption,
-table th,
-table td {
-  text-align: left;
-  vertical-align: middle;
-}
-a img {
-  border: 0;
-}
-:focus {
-  outline: 0;
-}
-html,
-body {
-  font-size: 62.5%;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  max-height: 100%;
-  overflow: hidden;
-}
-* {
-  box-sizing: border-box;
-}
-section {
-  background-image: url('../img/FB_COVER_2019.png');
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-}
-section div {
-  width: 280px;
-  height: 100%;
-  background: #00a69a;
-  padding: 20px 20px 20px 20px;
-  text-align: center;
-  margin: 5%;
-}
-section div h1 {
-  margin-top: 30vh;
-  font-size: 4rem;
-  color: #fff;
-  font-family: century;
-  line-height: 1.25;
-}
-section div button {
-  margin: 30px 0;
-  border-radius: 12.5px;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 25px;
-  background: #f9575f;
-  box-shadow: -5px -5px rgba(0, 0, 0, 0.2);
-  border: none;
-}
-section div button:hover {
-  background: #fa898f;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  max-width: 50%;
-  margin: 15vh 15%;
-}
-@media only screen and (max-width: 500px) {
-  form {
-    flex-direction: row;
-    max-width: 90%;
-  }
-}
-form div {
-  display: flex;
-}
-input[type=text],
-input[type=city],
-input[type=state],
-input[type=address],
-input[type=time],
-input[type=date],
-input[type=email],
-input[type=date],
-input[type=tel],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 3rem;
-}
-input[type=time],
-input[type=date] {
-  width: 350px;
-}
-input[type=submit] {
-  width: 100%;
-  background-color: #f9575f;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 3rem;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.hideForm {
-  display: none;
-}
-.formHolder {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v17/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+}
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+section {
+  background-image: url('../img/FB_COVER_2019.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+}
+section div {
+  width: 280px;
+  height: 100%;
+  background: #00a69a;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  margin: 5%;
+}
+section div h1 {
+  margin-top: 30vh;
+  font-size: 4rem;
+  color: #fff;
+  font-family: century;
+  line-height: 1.25;
+}
+section div button {
+  margin: 30px 0;
+  border-radius: 12.5px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 25px;
+  background: #f9575f;
+  box-shadow: -5px -5px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+section div button:hover {
+  background: #fa898f;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 15vh 15%;
+}
+@media only screen and (max-width: 500px) {
+  form {
+    flex-direction: row;
+    max-width: 90%;
+  }
+}
+form div {
+  display: flex;
+}
+input[type=text],
+input[type=city],
+input[type=state],
+input[type=address],
+input[type=time],
+input[type=date],
+input[type=email],
+input[type=date],
+input[type=tel],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 3rem;
+}
+input[type=time],
+input[type=date] {
+  width: 350px;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #f9575f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 3rem;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.hideForm {
+  display: none;
+}
+.formHolder {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
