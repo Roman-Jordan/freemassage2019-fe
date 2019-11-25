@@ -11,11 +11,11 @@ use PHPMailer\PHPMailer\Exception;
 require_once "./mailer/PHPMailer-master/src/PHPMailer.php";
 require_once "./mailer/PHPMailer-master/src/Exception.php";
 
-    // set the actual code
+// set the actual code
 http_response_code(200);
-    // set the header to make sure cache is forced
+// set the header to make sure cache is forced
 header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
-    // treat this as json
+// treat this as json
 header('Status: 200 ok');
 //header('Content-Type: application/json');
 
@@ -53,11 +53,10 @@ function autoMailer($recipient, $campaignId)
 }
 
 
-if (isset($_POST) && $_POST['secret']==='kirill1macy') {
-
-   echo autoMailer($_POST['email'], $_POST["campaign"]);
-    
-}else{
+if (isset($_POST)) {
+    foreach ($_POST['email'] as $email) {
+        echo autoMailer($_POST['email'], $_POST["campaign"]);
+    }
+} else {
     echo 'Not Today Spider-Man';
 }
-

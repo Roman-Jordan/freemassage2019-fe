@@ -25,6 +25,7 @@
                     form.set('secret','<?php echo $_POST['secret']; ?>')
                     form.set('email',mailList)
                     form.set('campaign',campaign.data[0].id)
+            
             await axios.post('https://freemassage2019.com/mailer/sendMail.php',form)
                     .then(res=>console.log('response from mailer',res))
                     .catch(res=>console.log('response from mailer',res))
