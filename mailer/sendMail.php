@@ -54,13 +54,22 @@ function autoMailer($recipient, $campaignId)
 }
 
 
-if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
+if (isset($_POST) && !empty($_POST)) {
+    $obj = json_decode($_POST); 
     
+   
+    echo json_encode(array(
+        'status' => 'googd', // success or not?
+        'message' => $obj->{'email'}
+        ));
+
     //$mailList = explode(',', $_POST["list"]);
     //autoMailer($recipient, $_POST["campaign"]);
+}else{
+    echo json_encode(array(
+        'status' => 'googd', // success or not?
+        'message' => 'no post'
+        ));
+
 }
 
-echo json_encode(array(
-    'status' => 'googd', // success or not?
-    'message' => $_POST
-    ));
