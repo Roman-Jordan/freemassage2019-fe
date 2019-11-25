@@ -11,7 +11,7 @@
 
 <body>
     <?php
-    if (isset($_POST["secret"]) && $_POST["secret"] === "yo") {
+    if (isset($_POST["secret"]) && $_POST["secret"] === "yoda") {
         $mailList = explode(',', $_POST["list"]);
         ?>
         <script>
