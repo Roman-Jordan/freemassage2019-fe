@@ -69,7 +69,7 @@ function autoMailer($recipient, $campaign)
         $campaign = "";
         foreach ($mailList as $recipient) {
             autoMailer($recipient, $_POST["campaign"]);
-            if($counter = 0){
+            if($counter === 0){
                 ?>
                 <script async>
                     axios.post('https://freemassage.herokuapp.com/addcampaign',{title:'<?php echo $_POST["campaign"]; ?>'})
