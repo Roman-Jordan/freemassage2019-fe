@@ -41,7 +41,6 @@
         </div>
         <div>
           <input type="date" id="date" name="date" placeholder="Date" />
-
           <input type="time" id="time" name="time" placeholder="Time" />
         </div>
         <div>
