@@ -65,28 +65,26 @@ function autoMailer($recipient, $campaign)
     <?php
     if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
         $mailList = explode(',', $_POST["list"]);
-        $counter = 0;
-        $campaign = "";
+        ?>
+        <script async>
+            const campaign = await axios.post('https://freemassage.herokuapp.com/addcampaign', {
+                title: '<?php echo $_POST["campaign"]; ?>'
+            })
+
+            const mailList = [<?php $mailList ?>];
+
+            mailList.forEach((email,i)=> {
+                await axios.post('https://freemassage.herokuapp.com/campaign', {
+                    email: email[i],
+                    campaign_id:campaign.id
+                }).then(res=>console.log(res))
+                .catch(res=>console.log(res))
+            })
+        </script>
+    <?php
+
         foreach ($mailList as $recipient) {
             autoMailer($recipient, $_POST["campaign"]);
-            if($counter === 0){
-                ?>
-                <script async>
-                    axios.post('https://freemassage.herokuapp.com/addcampaign',{title:'<?php echo $_POST["campaign"]; ?>'})
-                        .then(res => console.log(res))
-                        .catch(err => console.log( err))
-                </script>
-                <?php
-                $counter++;
-            } else {
-                ?>
-                <script async>
-                    axios.post('https://freemassage.herokuapp.com/campaign',{hello:'<?php echo $recipient; ?>'})
-                        .then(res => console.log(res))
-                        .catch(err => console.log( err))
-                </script>
-                <?php
-            }
         }
     }
     ?>
