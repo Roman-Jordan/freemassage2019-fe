@@ -54,7 +54,7 @@ function autoMailer($recipient, $campaignId)
 }
 
 
-if (isset($_POST) && !empty($_POST)) {
+if (isset($_POST)) {
     $obj = json_decode($_POST); 
     
    
