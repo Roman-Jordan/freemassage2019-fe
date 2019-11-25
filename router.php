@@ -31,7 +31,12 @@ if(isset($_SERVER['QUERY_STRING']) && isset($_GET['email']) && isset($_GET['camp
     $myfile = fopen("tracker.txt", "a") or die("Unable to open file!");
     fwrite($myfile, "\n". $txt);
     fclose($myfile);
-    
+    ?>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        alert('here')
+    </script>
+    <?php
     $request = explode('?',$request);
     
     pathFinder($request[0]);
