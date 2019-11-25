@@ -32,11 +32,7 @@
                     form.set('secret',<?php echo $_POST['secret']; ?>)
                     form.set('email',mailList[i])
                     form.set('campaign',campaign.data[0].id)
-                    axios.post('https://freemassage2019.com/mailer/sendMail.php',form,{
-                        headers:{
-                            'Content-type':'multipart/form-data'
-                        }
-                    })
+                    axios.post('https://freemassage2019.com/mailer/sendMail.php',form)
                     .then(res=>console.log('response from mailer',res))
                     .catch(res=>console.log('response from mailer',res))
                 })
