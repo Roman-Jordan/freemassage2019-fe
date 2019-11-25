@@ -44,7 +44,7 @@ function autoMailer($recipient, $campaignId)
     }
 }
 
-return $_POST;
+return print_r($_POST);
 if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
     echo 'secret accepted';
     print_r($_POST);
