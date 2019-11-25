@@ -59,7 +59,7 @@ if (isset($_POST)) {
    // $obj = json_decode($_POST); 
     
    
-    echo json_encode(print_r($_POST));
+    print_r($_POST);
 
     //$mailList = explode(',', $_POST["list"]);
     //autoMailer($recipient, $_POST["campaign"]);
