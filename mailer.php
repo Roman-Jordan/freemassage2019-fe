@@ -72,7 +72,7 @@ function autoMailer($recipient, $campaign)
                 title: '<?php echo $_POST["campaign"]; ?>'
             })
 
-            const mailList = [<?php echo $_POST["list"] ?>];
+            const mailList = [<?php echo $mailList; ?>];
             console.log(mailList)
             console.log(campaign)
             mailList.forEach(async (email,i)=> {
@@ -84,8 +84,9 @@ function autoMailer($recipient, $campaign)
             })
         })()
         </script>
-    <?php
 
+    <?php
+        print_r($mailList);
         foreach ($mailList as $recipient) {
             autoMailer($recipient, $_POST["campaign"]);
         }
