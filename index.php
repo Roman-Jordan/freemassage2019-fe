@@ -37,7 +37,7 @@
         </div>
         <div>
           <input type="tel" id="tel" name="tel" placeholder="1-971-555-5555" />
-          <input type="email" id="email" name="email" placeholder="email" />
+          <input type="email" id="email" name="email" placeholder="Email" />
         </div>
         <div>
           <input type="date" id="date" name="date" placeholder="Date" />
@@ -51,9 +51,9 @@
             name="address"
             placeholder="Address"
           />
-          <input type="city" id="city" name="city" placeholder="city" />
+          <input type="city" id="city" name="city" placeholder="City" />
 
-          <input type="state" id="state" name="state" placeholder="state" />
+          <input type="state" id="state" name="state" placeholder="State" />
         </div>
         <div
           class="g-recaptcha"
