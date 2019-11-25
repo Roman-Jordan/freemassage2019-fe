@@ -10,41 +10,39 @@ use PHPMailer\PHPMailer\Exception;
 require_once "./PHPMailer-master/src/PHPMailer.php";
 require_once "./PHPMailer-master/src/Exception.php";
 
-function autoMailer($recipient,$campaign){
-    
+function autoMailer($recipient, $campaign)
+{
+
     //PHPMailer Object
     $mail = new PHPMailer;
-    
+
     //Mail Template
 
     //From email address and name
     $mail->From = "info@FreeMassage2019.com";
     $mail->FromName = "Jeremy A.";
-    
+
     //To address and name
     $mail->addAddress($recipient, "One who deserves a massage");
-    
+
     //Address to which recipient will reply
     $mail->addReplyTo("info@freemassage2019.com", "Reply");
-    
+
     //Send HTML or Plain Text email
     $mail->isHTML(true);
-    
+
     //Custom Headers for google
-    $mail->addCustomHeader("List-Unsubscribe",'<info@freemassage2019.com.com>, <http://freemassage2019.com/?email='.$recipient.'>');
-    $mail->addCustomHeader("List-Unsubscribe-Post",'List-Unsubscribe=One-Click');
-  
+    $mail->addCustomHeader("List-Unsubscribe", '<info@freemassage2019.com.com>, <http://freemassage2019.com/?email=' . $recipient . '>');
+    $mail->addCustomHeader("List-Unsubscribe-Post", 'List-Unsubscribe=One-Click');
+
     $mail->Subject = "Employee Relaxation Day";
-    $mail->Body = massTemplate($recipient,$campaign);
+    $mail->Body = massTemplate($recipient, $campaign);
     $mail->AltBody = "This is the plain text version of the email content";
-    
-    if(!$mail->send()) 
-    {
+
+    if (!$mail->send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
-    } 
-    else 
-    {
-        echo "Message to: ".$recipient." has been sent successfully<br>";
+    } else {
+        echo "Message to: " . $recipient . " has been sent successfully<br>";
     }
 }
 
@@ -54,38 +52,37 @@ function autoMailer($recipient,$campaign){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
-<body>
-    <?php 
-    if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
-        echo "<p>set</p>";
-        $mailList = explode(',',$_POST["list"]);
-        foreach($mailList as $recipient){
-            autoMailer($recipient,$_POST["campaign"]);
-        }
-    }else {  
-    ?>
-    
-    <form method="post">
 
-        <input type="password" name="secret" placeholder="Your Super Secret"/><input name='campaign' type="text" placeholder="campaign"><input type="submit" /> <br />
+<body>
+    <?php
+    if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
+        $mailList = explode(',', $_POST["list"]);
+        foreach ($mailList as $recipient) {
+            autoMailer($recipient, $_POST["campaign"]);
+
+            ?>
+            <script async>
+                axios.post('https://freemassage.herokuapp.com/campaign',{hello:'<?php echo $recipient; ?>'})
+                    .then(res => console.log(res))
+                    .catch(err => console.log( err))
+            </script>
+
+    <?php
+        }
+    }
+    ?>
+    <form method="post">
+        <input type="password" name="secret" placeholder="Your Super Secret" /><input name='campaign' type="text" placeholder="campaign"><input type="submit" /> <br />
         <textarea name="list" rows="25" cols="70" placeholder="example@gmail.com,example2@gmail.com"></textarea>
     </form>
-    
-    <?php
-        
-    }
-    
-    ?>
-    
 </body>
+
 </html>
-
-
-
-
