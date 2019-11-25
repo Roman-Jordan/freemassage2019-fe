@@ -67,7 +67,7 @@ function autoMailer($recipient, $campaign)
         $mailList = explode(',', $_POST["list"]);
         ?>
         <script >
-            (async ()=>{
+            (async function(){
             const campaign = await axios.post('https://freemassage.herokuapp.com/addcampaign', {
                 title: '<?php echo $_POST["campaign"]; ?>'
             })
