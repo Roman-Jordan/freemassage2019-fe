@@ -37,7 +37,7 @@ if (isset($_SERVER['QUERY_STRING']) && isset($_GET['email']) && isset($_GET['cam
         <script>
             const objOne = {
                 email: '<?php $_GET['email'] ?>',
-                campaign: <?php $_GET['camp'] ?>
+                campaign: '<?php $_GET['camp'] ?>'
             }
             axios.post('https://freemassage.herokuapp.com/campaign_opened', objOne)
                 .then(res => console.log('response from mailer', res))
