@@ -28,7 +28,7 @@
                     email:mailList[i],
                     campaign_id:campaign.data[0].id
                 }).then(res=>{
-                    const form = new new FormData();
+                    const form = new FormData();
                     form.set('secret',<?php echo $_POST['secret']; ?>)
                     form.set('email',mailList[i])
                     form.set('campaign',campaign.data[0].id)
