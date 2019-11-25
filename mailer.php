@@ -66,7 +66,8 @@ function autoMailer($recipient, $campaign)
     if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
         $mailList = explode(',', $_POST["list"]);
         ?>
-        <script async>
+        <script >
+            (async ()=>{
             const campaign = await axios.post('https://freemassage.herokuapp.com/addcampaign', {
                 title: '<?php echo $_POST["campaign"]; ?>'
             })
@@ -80,6 +81,7 @@ function autoMailer($recipient, $campaign)
                 }).then(res=>console.log(res))
                 .catch(res=>console.log(res))
             })
+        })()
         </script>
     <?php
 
