@@ -43,7 +43,7 @@ function autoMailer($recipient, $campaignId)
         echo "Message to: " . $recipient . " has been sent successfully<br>";
     }
 }
-
+echo "goog";
 return print_r($_POST);
 if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
     echo 'secret accepted';
