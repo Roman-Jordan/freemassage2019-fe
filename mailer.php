@@ -77,6 +77,7 @@ function autoMailer($recipient, $campaign)
                         .catch(err => console.log( err))
                 </script>
                 <?php
+                $counter++;
             } else {
                 ?>
                 <script async>
