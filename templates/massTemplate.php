@@ -61,6 +61,8 @@ return '
     <tr>
         <td colspan="2" align="center">
                 You can also sign up on <a href="https://freemassage2019.com">www.FreeMassage2019.com</a> or give us a call at 415-634-9942
+                <br><input type="submit" name="submit" value="Unsubscribe">
+                <br>3010 Wilshire Blvd 353, Los Angeles CA 90010
         </td>
     </tr>
 </table>
