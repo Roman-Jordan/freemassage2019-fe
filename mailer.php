@@ -73,7 +73,7 @@ function autoMailer($recipient, $campaign)
             })
 
             const mailList = [<?php $mailList ?>];
-
+            console.log(mailList)
             mailList.forEach(async (email,i)=> {
                 await axios.post('https://freemassage.herokuapp.com/campaign', {
                     email: email[i],
