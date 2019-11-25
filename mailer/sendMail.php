@@ -3,13 +3,13 @@
 header("HTTP/1.1 200 OK");
 //Bring In the HTML Template For the Mass Mailer
 //This is where massTemplate($email,$campaign) comes from
-include "/templates/massTemplate.php";
+include "./templates/massTemplate.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once "/mailer/PHPMailer-master/src/PHPMailer.php";
-require_once "/mailer/PHPMailer-master/src/Exception.php";
+require_once "./mailer/PHPMailer-master/src/PHPMailer.php";
+require_once "./mailer/PHPMailer-master/src/Exception.php";
 
 function autoMailer($recipient, $campaignId)
 {
