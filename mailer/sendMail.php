@@ -1,6 +1,6 @@
 <?php
 
-header("HTTP/1.1 200 OK");
+
 //Bring In the HTML Template For the Mass Mailer
 //This is where massTemplate($email,$campaign) comes from
 include "./templates/massTemplate.php";
