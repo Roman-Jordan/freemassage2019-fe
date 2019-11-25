@@ -60,7 +60,7 @@ if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9
     //autoMailer($recipient, $_POST["campaign"]);
 }
 
-return json_encode(array(
+echo json_encode(array(
     'status' => 'googd', // success or not?
     'message' => 'yo'
     ));
