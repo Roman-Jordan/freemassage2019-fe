@@ -7,8 +7,7 @@ return '
     <tr padding="10px">
         <td><img width="200px" src="https://www.freemassage2019.com/img/logo.png"></td>
         <td align="right" width="50%">
-            <b>Call us: (800) 872-1548</b>
-            <br>Jeremy Archuleta: (415) 634-9942
+            <br>Jeremy Archeleta: (415) 634-9942
         </td>
     </tr>
     <tr>
@@ -43,7 +42,7 @@ return '
     <tr>
         <td padding="5px" style="background: #e20087; color:#fff; vertical-align: middle; font-size: 30;; font-family: Arial, Helvetica, sans-serif;" colspan="2" align="center">
             READY TO BOOK?
-            <br>Fill out some basic info below or go to <a href="https://www.freemassage2019.com">www.FreeMassage2019.com</a> and we\'ll get you set up!
+            <br>Fill out some basic info below or go to <a href="https://www.freemassage2019.com" style="color:#fff">www.FreeMassage2019.com</a> and we\'ll get you set up!
         </td>
     </tr>
     <tr>
@@ -62,6 +61,8 @@ return '
     <tr>
         <td colspan="2" align="center">
                 You can also sign up on <a href="https://freemassage2019.com">www.FreeMassage2019.com</a> or give us a call at 415-634-9942
+                <br><input type="submit" name="submit" value="Unsubscribe">
+                <br>3010 Wilshire Blvd 353, Los Angeles CA 90010
         </td>
     </tr>
 </table>
