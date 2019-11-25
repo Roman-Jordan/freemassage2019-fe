@@ -53,7 +53,7 @@ function autoMailer($recipient, $campaignId)
 }
 
 
-if (isset($_POST) && $_POST['secret']==='yoda') {
+if (isset($_POST) && $_POST['secret']==='kirill1macy') {
 
    echo autoMailer($_POST['email'], $_POST["campaign"]);
     
