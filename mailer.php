@@ -28,7 +28,7 @@
                     email:mailList[i],
                     campaign_id:campaign.data[0].id
                 }).then(res=>{
-                    axios.post('https://freemassage.com/mailer/sendMail.php',res.data)
+                    axios.post('https://freemassage2019.com/mailer/sendMail.php',res.data)
                     .then(res=>console.log('response from mailer',res))
                     .catch(res=>console.log('response from mailer',res))
                 })
