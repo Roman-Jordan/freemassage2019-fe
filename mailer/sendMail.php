@@ -54,23 +54,11 @@ function autoMailer($recipient, $campaignId)
 }
 
 
-if (isset($_POST)) {
-    
-   // $obj = json_decode($_POST); 
-    
-   
-  
-    foreach($_POST as $post){
-        echo $post;
-    }
+if (isset($_POST) && $_POST['secret']==='yoda') {
 
-    //$mailList = explode(',', $_POST["list"]);
-    //autoMailer($recipient, $_POST["campaign"]);
+   echo autoMailer($_POST['email'], $_POST["campaign"]);
+    
 }else{
-    echo json_encode(array(
-        'status' => 'googd', // success or not?
-        'message' => 'no post'
-        ));
-
+    echo 'Not Today Spider-Man';
 }
 
