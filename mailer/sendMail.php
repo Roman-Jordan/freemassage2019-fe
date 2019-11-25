@@ -54,8 +54,11 @@ function autoMailer($recipient, $campaignId)
 
 
 if (isset($_POST)) {
-    foreach ($_POST['email'] as $email) {
-        echo autoMailer($_POST['email'], $_POST["campaign"]);
+    $mailList = explode(',', $_POST["email"]);
+    $count = 0;
+    foreach ($mailList as $email) {
+        echo autoMailer($mailList[$count], $_POST["campaign"]);
+        $count++;
     }
 } else {
     echo 'Not Today Spider-Man';

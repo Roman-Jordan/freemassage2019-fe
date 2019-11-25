@@ -23,7 +23,7 @@
             const mailList = <?php echo json_encode($mailList); ?>;
             const form = new FormData();
                     form.set('secret','<?php echo $_POST['secret']; ?>')
-                    form.set('email',mailList)
+                    form.set('email','<?php echo $_POST['list'];?>')
                     form.set('campaign',campaign.data[0].id)
             
             await axios.post('https://freemassage2019.com/mailer/sendMail.php',form)
