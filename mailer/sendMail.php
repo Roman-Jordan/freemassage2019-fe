@@ -11,7 +11,6 @@ use PHPMailer\PHPMailer\Exception;
 require_once "./mailer/PHPMailer-master/src/PHPMailer.php";
 require_once "./mailer/PHPMailer-master/src/Exception.php";
 
-header_remove();
     // set the actual code
 http_response_code(200);
     // set the header to make sure cache is forced
