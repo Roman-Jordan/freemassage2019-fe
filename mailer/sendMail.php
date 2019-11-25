@@ -62,5 +62,5 @@ if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9
 
 echo json_encode(array(
     'status' => 'googd', // success or not?
-    'message' => 'yo'
+    'message' => $_POST
     ));
