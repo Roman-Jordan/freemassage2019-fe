@@ -18,6 +18,7 @@ http_response_code(200);
 header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
     // treat this as json
 header('Status: 200 ok');
+header('Content-Type: application/json');
 
 function autoMailer($recipient, $campaignId)
 {
@@ -54,10 +55,12 @@ function autoMailer($recipient, $campaignId)
 
 
 if (isset($_POST["secret"]) && $_POST["secret"] === "sdhrhfoiwerh38yuhin209q2u-9ji3j90ruj2j0u8j0iwroher09") {
-    echo 'secret accepted';
-    print_r($_POST);
+    
     //$mailList = explode(',', $_POST["list"]);
     //autoMailer($recipient, $_POST["campaign"]);
 }
 
-echo "goog";
+return json_encode(array(
+    'status' => 'googd', // success or not?
+    'message' => 'yo'
+    ));
