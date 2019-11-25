@@ -72,7 +72,7 @@ function autoMailer($recipient, $campaign)
                 title: '<?php echo $_POST["campaign"]; ?>'
             })
 
-            const mailList = [<?php echo json_encode($mailList); ?>];
+            const mailList = <?php echo json_encode($mailList); ?>;
             console.log(mailList.length)
             console.log(campaign)
             mailList.forEach(async (email,i)=> {
