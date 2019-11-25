@@ -21,23 +21,14 @@
             })
 
             const mailList = <?php echo json_encode($mailList); ?>;
-            console.log(mailList)
-            console.log(campaign)
-            mailList.forEach(async (email,i)=> {
-                await axios.post('https://freemassage.herokuapp.com/campaign', {
-                    email:mailList[i],
-                    campaign_id:campaign.data[0].id
-                }).then(res=>{
-                    const form = new FormData();
+            const form = new FormData();
                     form.set('secret','<?php echo $_POST['secret']; ?>')
-                    form.set('email',mailList[i])
+                    form.set('email',mailList)
                     form.set('campaign',campaign.data[0].id)
-                    axios.post('https://freemassage2019.com/mailer/sendMail.php',form)
+            await axios.post('https://freemassage2019.com/mailer/sendMail.php',form)
                     .then(res=>console.log('response from mailer',res))
                     .catch(res=>console.log('response from mailer',res))
-                })
-                .catch(res=>console.log(res))
-            })
+           
         })()
         </script>
 <?php
