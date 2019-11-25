@@ -18,7 +18,7 @@ http_response_code(200);
 header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
     // treat this as json
 header('Status: 200 ok');
-header('Content-Type: application/json');
+//header('Content-Type: application/json');
 
 function autoMailer($recipient, $campaignId)
 {
@@ -56,7 +56,7 @@ function autoMailer($recipient, $campaignId)
 
 if (isset($_POST)) {
     
-    $obj = json_decode($_POST); 
+   // $obj = json_decode($_POST); 
     
    
     echo json_encode(print_r($_POST));
