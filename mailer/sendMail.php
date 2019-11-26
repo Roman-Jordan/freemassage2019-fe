@@ -25,13 +25,13 @@ function autoMailer($recipient, $campaignId)
 {
     //PHPMailer Object
     $mail = new PHPMailer;
-    $mail->SMTPDebug = 0;
+    $mail->SMTPDebug = 2;
     $mail->isSMTP();
     $mail->Host = 'localhost';
     $mail->SMTPAuth = false;
     $mail->SMTPAutoTLS = false; 
     $mail->Port = 25;
-    $mail->SMTPDebug = 2; 
+
 
     //From email address and name
     $mail->From = "info@FreeMassage2019.com";
