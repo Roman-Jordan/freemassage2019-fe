@@ -7,11 +7,9 @@ include "./templates/massTemplate.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
 
 require_once "./mailer/PHPMailer-master/src/PHPMailer.php";
 require_once "./mailer/PHPMailer-master/src/Exception.php";
-require_once "./mailer/PHPMailer-master/src/SMTP.php";
 
 // set the actual code
 http_response_code(200);
@@ -25,17 +23,11 @@ function autoMailer($recipient, $campaignId)
 {
     //PHPMailer Object
     $mail = new PHPMailer;
-    $mail->SMTPDebug = 2;
-    $mail->isSMTP();
-    $mail->Host = 'localhost';
-    $mail->SMTPAuth = false;
-    $mail->SMTPAutoTLS = false; 
-    $mail->Port = 25;
-
+    
 
     //From email address and name
     $mail->From = "info@FreeMassage2019.com";
-    $mail->FromName = "Jeremy A";
+    $mail->FromName = "Jeremy A.";
 
     //To address and name
     $mail->addAddress($recipient, "One who deserves a massage");
