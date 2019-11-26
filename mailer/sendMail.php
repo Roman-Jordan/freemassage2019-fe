@@ -32,7 +32,7 @@ function autoMailer($recipient, $campaignId)
 
     //From email address and name
     $mail->From = "info@FreeMassage2019.com";
-    $mail->FromName = "Jeremy A.";
+    $mail->FromName = "Jeremy A";
 
     //To address and name
     $mail->addAddress($recipient, "One who deserves a massage");
