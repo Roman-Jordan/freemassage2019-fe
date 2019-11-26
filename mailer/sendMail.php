@@ -7,9 +7,11 @@ include "./templates/massTemplate.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
 require_once "./mailer/PHPMailer-master/src/PHPMailer.php";
 require_once "./mailer/PHPMailer-master/src/Exception.php";
+require_once "./mailer/PHPMailer-master/src/SMTP.php";
 
 // set the actual code
 http_response_code(200);
